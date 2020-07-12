@@ -1,0 +1,22 @@
+.status-list {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    color: #F77062;
+    border: none;
+    background-color: #FFFFFF;
+}
+.status-list:hover {
+    background-color: #F77062;
+    color: #FFFFFF;
+    border: none;
+}
+.status-list:active{
+    border: none;
+}
+.status-list:focus{
+    background-color: #F77062;
+    color: #FFFFFF;
+    border: none;
+}   

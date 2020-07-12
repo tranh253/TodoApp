@@ -1,4 +1,18 @@
 .footer-wrapper {
-    background-color: red;
-    box-shadow: 0px 0px 20px grey;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px #00000015;
+    position: fixed;
+    bottom: 0;
+    height: 49px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.remain-task {
+    color: #F77062;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
 }

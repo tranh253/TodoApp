@@ -1,0 +1,27 @@
+::-webkit-input-placeholder {
+    color: #CCCCCC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 19px;
+ }
+ 
+ form {
+   margin-top: 50px;
+   width: 100%;
+ }
+ 
+ form input {
+   border: none;
+   background: transparent;
+   border-bottom: 1.5px solid #CCCCCC;
+   outline: none;
+   width: 100%;
+ }
+ 
+ form button {
+   background: transparent;
+   border: 0;
+   color: #fff;
+ }

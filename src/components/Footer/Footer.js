@@ -1,17 +1,18 @@
 import React from 'react'
 import FilterLink from '../../containers/FilterLink'
 import { VisibilityFilters } from '../../actions'
+import './Footer.css'
 
 const Footer = () => (
     <div className="footer-wrapper">
-        <span>Show: </span>
-        <FilterLink filter={VisibilityFilters.SHOW_ALL}>
+        <div><p className="remain-task">8 tasks left</p></div>
+        <FilterLink className="all-category" filter={VisibilityFilters.SHOW_ALL}>
             ALL
     </FilterLink>
-        <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>
+        <FilterLink className="ongoing-category" filter={VisibilityFilters.SHOW_ACTIVE}>
             ONGOING
     </FilterLink>
-        <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>
+        <FilterLink className="completed-category" filter={VisibilityFilters.SHOW_COMPLETED}>
             COMPLETED
     </FilterLink>
     </div>
