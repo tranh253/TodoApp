@@ -3,28 +3,16 @@ import './App.css';
 import AddToDo from '../../containers/AddTodo/AddTodo'
 import VisibleTodoList from '../../containers/VisibleTodoList'
 import Footer from '../Footer/Footer'
-import styled from 'styled-components'
+import plus from '../../img/plus.png'
 const categoryArr = ['Homework', 'Assignment', 'Work']
 var colorArr = ['#38C9FF', '#FF3838', '#FFAB38', '#21966B']
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-const HeaderWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-shadow: 0px 5px 20px #00000016;
-`
 
 class App extends React.Component {
   render() {
     return (
-      <Wrapper className="wrapper">
-        <HeaderWrapper className="header-wrapper">
+      <div className="wrapper">
+        <div className="header-wrapper">
           <div className="header-content">
             <div className="header-text">
               <p>To-do list</p>
@@ -38,13 +26,13 @@ class App extends React.Component {
                   </>
                 )
               })}
-              <div></div>
+              <div className="add-category"><img src={plus} alt="AddButton" /></div>
             </div>
             <div className="progress-bar">
-              <div>100%</div>
+              <div className="percentage">100% Completed</div>
             </div>
           </div>
-        </HeaderWrapper>
+        </div>
         <div className="body-wrapper">
           <div className="body-content">
             <div className="addToDo">
@@ -53,10 +41,12 @@ class App extends React.Component {
             <div className="todo-list">
               <VisibleTodoList />
             </div>
-            <Footer />
           </div>
         </div>
-      </Wrapper>
+        <div className="footer">
+              <Footer />
+        </div>
+      </div>
     )
   }
 }

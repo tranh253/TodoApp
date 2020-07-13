@@ -6,15 +6,17 @@ import './Footer.css'
 const Footer = () => (
     <div className="footer-wrapper">
         <div><p className="remain-task">8 tasks left</p></div>
-        <FilterLink className="all-category" filter={VisibilityFilters.SHOW_ALL}>
-            ALL
-    </FilterLink>
-        <FilterLink className="ongoing-category" filter={VisibilityFilters.SHOW_ACTIVE}>
-            ONGOING
-    </FilterLink>
-        <FilterLink className="completed-category" filter={VisibilityFilters.SHOW_COMPLETED}>
-            COMPLETED
-    </FilterLink>
+        <div className="todo-tags">
+            <FilterLink className="all-category" filter={VisibilityFilters.SHOW_ALL}>
+                ALL
+            </FilterLink>
+            <FilterLink className="ongoing-category" filter={VisibilityFilters.SHOW_ACTIVE}>
+                ONGOING
+            </FilterLink>
+            <FilterLink className="completed-category" filter={VisibilityFilters.SHOW_COMPLETED}>
+                COMPLETED
+            </FilterLink>
+        </div>
     </div>
 )
 

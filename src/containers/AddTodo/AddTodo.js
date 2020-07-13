@@ -16,7 +16,7 @@ const AddTodo = ({ dispatch }) => {
                 dispatch(addTodo(input.value))
                 input.value = ''
             }}>
-                <input placeholder="What’s needed to be done?" ref={node => input = node} />
+                <input placeholder="☐ What’s needed to be done?" ref={node => input = node} />
             </form>
         </div>
     )
