@@ -3,9 +3,21 @@ import FilterLink from '../../containers/FilterLink'
 import { VisibilityFilters } from '../../actions'
 import './Footer.css'
 
-const Footer = () => (
-    <div className="footer-wrapper">
-        <div><p className="remain-task">8 tasks left</p></div>
+
+function Footer(todos) {
+    Object.size = function(obj) {
+        var size = 0, key;
+        for (key in obj) {
+            if (obj.hasOwnProperty(key)) size++;
+        }
+        return size;
+    };
+    
+    // Get the size of an object
+    var size = Object.size(todos);
+    return(
+        <div className="footer-wrapper">
+        <div><p className="remain-task">8 task left</p></div>
         <div className="todo-tags">
             <FilterLink className="all-category" filter={VisibilityFilters.SHOW_ALL}>
                 ALL
@@ -18,6 +30,9 @@ const Footer = () => (
             </FilterLink>
         </div>
     </div>
-)
+    )
+}
+    
+
 
 export default Footer

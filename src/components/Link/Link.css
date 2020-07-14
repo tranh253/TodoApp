@@ -1,6 +1,7 @@
 .status-list {
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     padding: 15px;
     color: #F77062;
     border: none;
@@ -12,6 +13,13 @@
     border: none;
 }
 .status-list:active{
+    background-color: #F77062;
+    color: #FFFFFF;
+    border: none;
+}
+.status-list:visited {
+    background-color: #F77062;
+    color: #FFFFFF;
     border: none;
 }
 .status-list:focus{
@@ -19,3 +27,11 @@
     color: #FFFFFF;
     border: none;
 }   
+
+@media (max-width: 375px) {
+    .status-list{
+        font-size: 8px;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+    }
+}

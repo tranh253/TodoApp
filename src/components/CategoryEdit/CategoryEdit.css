@@ -1,0 +1,93 @@
+.edit-wrapper {
+    width: 325px;
+    height: 325px;
+    background-color: white;
+    border-radius: 40px;
+    justify-content: center;
+    backdrop-filter: brightness(75%);
+    backdrop-filter: opacity(80%);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 45px;
+    box-sizing: border-box;
+    position: relative;
+}
+.label {
+    font-size: 8px;
+    font-weight: bold;
+    color: #CCCCCC;
+}
+.delete-icon{
+    position: absolute;
+    bottom: 25px;
+    color: #CCCCCC;
+    cursor: pointer;
+}
+.delete-icon:hover {
+    color: #F77062;
+}
+.save-button {
+    cursor: pointer;
+    background-color: #F77062;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 35px;
+    left: 45%;
+}
+.check-icon {
+    margin-top: 5px;
+    margin-left: 6px;
+}
+input {
+    border: none;
+    background: transparent;
+    border-bottom: 1.5px solid #CCCCCC;
+    padding-bottom: 8px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type=text] {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;;
+}
+.color-sample {
+    background-color: #38C9FF;
+    width: 111px;
+    height: 25px;
+}
+.color-edit{
+    display: flex;
+    flex-direction: row;
+    margin-top: 21px;
+}
+.color1, .color2, .color3, .color4 {
+    width: 25px;
+    height: 25px;
+    margin-right: 18px;
+}
+.color1 {
+    background-color: #38C9FF;
+}
+.color2 {
+    background-color: #FF3838;
+}
+.color3{
+    background-color: #FFAB38;
+}
+.color4{
+    background-color: #21966B;
+}
+.color-hex {
+    width: 78px !important;
+}

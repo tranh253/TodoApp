@@ -4,6 +4,7 @@
     font-weight: 500;
     width: 100%;
     line-height: 19px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 form {
@@ -15,7 +16,7 @@ form input {
   border: none;
   background: transparent;
   border-bottom: 1.5px solid #CCCCCC;
-  padding-left: 34px;
+  padding-left: 64px;
   padding-bottom: 11px;
   outline: none;
   width: 100%;
@@ -26,4 +27,46 @@ form button {
   background: transparent;
   border: 0;
   color: #fff;
+}
+.input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.choose-category {
+  position: absolute;
+  padding-left: 34px;
+  cursor: pointer;
+}
+.categories-select {
+  width: 325px;
+  height: 325px;
+  background-color: white;
+  border-radius: 40px;
+  justify-content: center;
+  backdrop-filter: brightness(75%);
+  backdrop-filter: opacity(80%);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding-top: 45px;
+  padding-left: 45px;
+  box-sizing: border-box;
+  position: relative;
+}
+.category-select {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  top: 0px;
+}
+.add-category-select {
+  position: absolute;
+  bottom: 45px;
 }

@@ -1,4 +1,57 @@
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
 ul {
     list-style-type: none;
     margin-left: -20px;
+}
+.delete-button {
+    color: #CCCCCC;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.delete-button:hover {
+    color: #F77062;
+}
+.deleteModal{
+    width: 325px;
+    height: 325px;
+    background-color: white;
+    border-radius: 40px;
+    justify-content: center;
+    backdrop-filter: brightness(75%);
+    backdrop-filter: opacity(80%);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+.deleteModal p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.delete-task-button {
+    width: 254px;
+    height: 53px;
+    background-color: #FF3838;
+    color: white;
+    border-radius: 27px;
+    position: absolute;
+    right: 35px;
+    top: 111px;
+    cursor: pointer;
+}
+.cancel-button {
+    cursor: pointer;
+    position: absolute;
+    right: 128px;
+    top: 194px;
+    color: #FF3838;
 }

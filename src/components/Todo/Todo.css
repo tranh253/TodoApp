@@ -5,10 +5,11 @@
 }
 .list-content {
     font-size: 16px;
-    margin-left: 15px;
+    margin: 0px 0px 0px 15px;
     font-weight: 500;
     color: #000000;
     line-height: 19px;
+    word-break: break-word; 
 }
 .category-tag {
     height: 19px;
@@ -22,12 +23,7 @@
     border: 2.5px solid #CCCCCC;
     border-radius: 50%;
 }
-.delete-button {
-    color: #CCCCCC;
-    cursor: pointer;
-    margin-left: 5px;
-    margin-top: 4px;
-}
-.delete-button:hover {
-    color: #F77062;
+.bullet-list:hover {
+    background-color: #F77062;
+    border: 2.5px solid #F77062;
 }

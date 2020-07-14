@@ -6,8 +6,10 @@ const todos = (state = [], action) => {
                 {
                     id: action.id,
                     text: action.text,
+                    color: '#38C9FF',
                     completed: false
                 }
+                
             ]
         case 'TOGGLE_TODO':
             return state.map(todo =>
@@ -16,7 +18,7 @@ const todos = (state = [], action) => {
                     : todo
             )
         case 'DELETE_TODO':
-            return state.filter((id) => id !== action.id)
+            return state.filter(todo => todo.id !== action.id)
         default:
             return state
     }
